@@ -1,1 +1,182 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sip & Savour | Recipe Book & Cocktail Menu</title>
+    <link rel="stylesheet" href="/CSS/Grid.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#" class="logo">The Daily Sip &amp; Refreshing Drinks</a>
+
+            <ul class="nav-links">
+                <li><a href="#menu">Recipes</a></li>
+                <li><a href="#menu">Cocktails</a></li>
+                <li><a href="#menu">Mocktails</a></li>
+                <li><a href="#spotlight">Spotlight</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero container">
+            <h1>Discover Handcrafted Recipes &amp;Refreshing Drinks</h1>
+            <p>Search by spirit, ingredient, or dish to see what you can make tonight</p>
+
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Try Gin,Rosemary or Pasta">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+    <section class="filter-section container" id="menu">
+        <h2>Explore the menu</h2>
+        <div class="filter-pills">
+            <button class="pill active" type="button" data-category="all">All</button>
+            <button class="pill" type="buttton" data-category="cocktail">Cocktails</button>
+            <button class="pill" type="button" data-category="mocktail">Mocktails</button>
+            <button class="pill" type="button" data-category="recipe">Food Recipe</button>
+        </div>
+    </section>
+    <main class="container">
+        <div class="menu-grid" id="menuGrid">
+            <article class="recipe-card" data-category="cocktail">
+                <div class="card-image">
+                    <img src="Images/Great_cocktails.webp" alt="">
+                    <spam class="badge cocktail">Cocktails</spam>
+                    <button class="bookmark-button" type="button" aria-label="Save item">✿</button>
+                </div>
+                <div class="card-content">
+                    <spam class="prep-time"></spam>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </article>
+            <article class="recipe-card" data-category="mocktail">
+                <div class="card-image">
+                    <img src="Images/Mocktail.jpg" alt="">
+                    <spam class="badge mocktail">Mocktails</spam>
+                    <button class="bookmark-button" type="button" aria-label="Save item">✿</button>
+                </div>
+                <div class="card-content">
+                    <spam class="prep-time"></spam>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </article>
+            <article class="recipe-card" data-category="recipe">
+                <div class="card-image">
+                    <img src="Images/Pasta.jpg" alt="">
+                    <spam class="badge recipe">Food</spam>
+                    <button class="bookmark-button" type="button" aria-label="Save item">✿</button>
+                </div>
+                <div class="card-content">
+                    <spam class="prep-time"></spam>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <section class="ingredient-spotlight" id="spotlight">
+        <div class="spotlight-text">
+            <span class="tag">INGREDIENT OF THE WEEK</span>
+            <h2>Fresh Strawberries</h2>
+            <p>
+                Discover the natural sweetness of fresh strawberries.
+                A perfect ingredient for refreshing drinks, delicious
+                desserts and healthy meals.
+            </p>
+            <a href="#recipes" class="orange-btn">
+                Explore Recipes
+            </a>
+        </div>
+        <div class="spotlight-photo">
+            <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=800" alt="Fresh strawberries">
+        </div>
+    </section>
+
+<!-- Featured Spotlight Cards -->
+<section class="featured-section">
+        <div class="section-title">
+            <h2>Discover Our Specials</h2>
+            <p>Fresh ingredients, delicious flavours and amazing recipes.</p>
+        </div>
+        <div class="featured-container">
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600" alt="Pineapple drink">
+                <h3>Tropical Refreshment</h3>
+                <p>Enjoy a refreshing blend of tropical fruits.</p>
+                <a href="#recipes">Discover More</a>
+            </div>
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600" alt="Chocolate cake">
+                <h3>Sweet Delights</h3>
+                <p>Explore delicious desserts made with love.</p>
+                <a href="#recipes">Discover More</a>
+             </div>
+             <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600" alt="Fresh healthy salad">
+                <h3>Healthy Choices</h3>
+                <p>Fresh and nutritious meals for every day.</p>
+                <a href="#recipes">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer" id="contact">
+        <div class="footer-content">
+            <!-- About -->
+             <div class="footer-column">
+                <h2 class="footer-logo">Taste & Mix.</h2>
+                <p>Bringing delicious food, creative recipes and refreshing mocktails to your table.</p>
+            </div>
+
+            <!-- Quick Links -->
+             <div class="footer-column">
+                <h3>Quick Links</h3>
+                
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#spotlight">Our Specials</a>
+                <a href="#contact">Contact Us</a>
+            </div>            
+            <!-- Categories -->
+            <div class="footer-column">
+                <h3>Categories</h3>
+
+                <a href="#recipes">Main Dishes</a>
+                <a href="#recipes">Desserts</a>
+                <a href="#recipes">Mocktails</a>
+                <a href="#recipes">Healthy Meals</a>
+            </div>
+
+            <!-- Information -->
+            <div class="footer-column">
+                <h3>Information</h3>
+
+                <p>Fresh ingredients and quality recipes.</p>
+
+                <p>All featured mocktail drinks are alcohol-free.</p>
+
+                <p>Any alcohol-related content is intended
+                only for adults of legal drinking age.</p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            
+            <p>&copy; 2026 Taste & Mix. All Rights Reserved.</p>
+            <p>Made with passion for food lovers.</p>
+        
+        </div>
+    </footer>
+
+
+
+    
+</body>
+</html>
